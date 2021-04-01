@@ -1,0 +1,97 @@
+/* setting base colors for later use*/
+:root {
+    --primary: #7f9fb1;
+    --secondary: #7c8588;
+    --tertiary: #788185;
+    --light-dark: #6f6866;
+    --dark: #2e2f3a;
+    --border-radius: .3rem;
+}
+
+*{
+    box-sizing: border-box;
+}
+/*body styling*/
+body{
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--dark);
+    line-height: 1.25;
+    font-size: 18px;
+}
+/* styling all headers the same*/
+h1{
+    font-weight: 600;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.15;
+}
+h2{
+    font-weight: 600;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.15;
+}
+h3{
+    font-weight: 600;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.15;
+}
+h4{
+    font-weight: 600;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.15;
+}
+h5{
+    font-weight: 600;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.15;
+}
+h6{
+    font-weight: 600;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.15;
+}
+/* styling the main */
+main{
+    margin: 25px auto;
+    width: 95%;
+}
+
+/*btn styling*/
+.btn {
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 6px 6px;
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    border-radius: var(--border-radius);
+    color: var(--border-radius);
+    border: none;
+    outline: none;
+    background-color: var(--tertiary);
+    box-shadow: 3px 3px var(--dark);
+    transform: translate(-2px, -2px);
+}
+p{
+    font-size: 1rem;
+    margin: 5px 5px;
+}
+.day p{
+    font-size: .8rem;
+}
+
+.btn:hover {
+    color: var(--primary);
+    background-color: var(--light-dark);
+    transform: translate(0, 0);
+    box-shadow: 1px 1px var(--dark);
+}
+

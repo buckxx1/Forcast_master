@@ -22,7 +22,7 @@
             <div class="col-12 col-md-4">
 
                 <div class="card">
-                    <h2 class="card-header text-uppercase">Search for a City Name</h2>
+                    <h2 class="card-header ">Search for a City Name</h2>
                     <form id="city-form" class="card-body">
                         <label class="form-label" for="cityname">City Name</label>
                         <input name="cityname" id="cityname" type="text" autofocus="true" class="form-input"/>
@@ -37,6 +37,30 @@
                 <div class="card hidden" id="current-weather-card">
                     <h2 class="card-header" id="weather-status"></h2>
                     <div class="card-body" id="current-weather">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- search history section-->
+
+        <div class="flex-row justify-space-between col-12">
+            <div class="col-12 col-md-4" id="search">
+                <div class="card" id="history" style="display: none;">
+                    <h3 class="card-header">Search History<i id="trash" class="fas fa-trash" title="Clear History"></i> 
+                    </h3>
+                    <div class="card-body" id="history-buttons">
+
+                    </div>
+
+                </div>
+            </div>
+            <!--hidden card 5 day to show when invoked-->
+            <div class="col-12 col-md-8">
+                <div class="card hidden" id="five-day-card">
+                    <h2 class="card-header" id="five-day-head">5 Day Forcast</h2>
+                    <div class="card-body flex-row justify-space-around" id="five-day-body">
 
                     </div>
                 </div>
