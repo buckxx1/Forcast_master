@@ -12,6 +12,37 @@
     <link rel="icon" href="assets/images/sun-cloud.png">
 </head>
 <body>
+    <!--header-->
+    <header class="header1">
+        <h1 class="app-title"><i class="fas fa-sun"></i>Weather Forcaster</h1>
+    </header>
+    <!--main-->
+    <main class="flex-row justify-space-between">
+        <div class="flex-row justify-space-between col-12">
+            <div class="col-12 col-md-4">
+
+                <div class="card">
+                    <h2 class="card-header text-uppercase">Search for a City Name</h2>
+                    <form id="city-form" class="card-body">
+                        <label class="form-label" for="cityname">City Name</label>
+                        <input name="cityname" id="cityname" type="text" autofocus="true" class="form-input"/>
+                        <button type="submit" class="btn">Get Forcast</button>
+                    </form>
+                </div>
+            </div>
+
+            <!--current weather card-->
+
+            <div class="col-12 col-md-8">
+                <div class="card hidden" id="current-weather-card">
+                    <h2 class="card-header" id="weather-status"></h2>
+                    <div class="card-body" id="current-weather">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
     <!--link to js-->
