@@ -17,7 +17,7 @@ var textSubmitHandler = function (event) {
     //prevent default action
     event.preventDefault();
     //get city from user imput 
-    var cityname = cityNameInputEl.nodeValue.trim();
+    var cityname = cityNameInputEl.value.trim();
 
     //store city name in LS
     if (cityname) {
@@ -41,7 +41,7 @@ var textSubmitHandler = function (event) {
 //setup the api and call
 
 var getWeatherInfo = function (cityname) {
-    var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&units=imperial&appid=f97301447cbd41068af8623a398ba1fb";
+    var apCityiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&units=imperial&appid=f97301447cbd41068af8623a398ba1fb";
     fetch(
         apiCityUrl
     )
