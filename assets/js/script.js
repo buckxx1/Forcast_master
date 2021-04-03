@@ -1,6 +1,4 @@
 //set up variables
-var searchHistoryArray = [];
-var trashEl = document.querySelector("#trash")
 var today = new Date();
 var cityFormEl = document.querySelector("#city-form");
 var cityNameInputEl = document.querySelector("#cityname");
@@ -10,8 +8,10 @@ var fiveDayCardEl = document.querySelector("#five-day-card");
 var fiveDayEl = document.querySelector("#five-day-body");
 var weatherStatusEl = document.querySelector('#weather-status');
 var searchEl = document.querySelector('#search');
-var historyButtonsEl = document.querySelector("#history-buttons");
-var historyCardEl = document.querySelector("#history");
+var historyButtonsEl = document.querySelector("#history-buttons")
+var historyCardEl = document.querySelector("#history")
+var trashEl = document.querySelector("#trash")
+var searchHistoryArray = []
 
 var textSubmitHandler = function (event) {
     //prevent default action
@@ -41,7 +41,7 @@ var textSubmitHandler = function (event) {
 //setup the api and call
 
 var getWeatherInfo = function (cityname) {
-    var apCityiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&units=imperial&appid=f97301447cbd41068af8623a398ba1fb";
+    var apiCityUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&units=imperial&appid=f97301447cbd41068af8623a398ba1fb";
     fetch(
         apiCityUrl
     )
@@ -51,7 +51,7 @@ var getWeatherInfo = function (cityname) {
         .then(function (cityResponse) {
             console.log(cityResponse)
             //hold lat and long in var
-            var latitude = cityResponce.coord.lat;
+            var latitude = cityResponse.coord.lat;
             var longitude = cityResponse.coord.lon;
 
             var city = cityResponse.name;

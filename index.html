@@ -6,6 +6,8 @@
     <title>Forcast Master</title>
     <!--bootstrap link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!--link to css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- adding icon to tab -->
@@ -14,7 +16,7 @@
 <body>
     <!--header-->
     <header class="header1">
-        <h1 class="app-title"><i class="fas fa-sun"></i>Weather Forcaster</h1>
+        <h1 class="app-title"><i class="fas fa-cloud-sun"></i>Weather Forcaster</h1>
     </header>
     <!--main-->
     <main class="flex-row justify-space-between">
@@ -22,7 +24,7 @@
             <div class="col-12 col-md-4">
 
                 <div class="card">
-                    <h2 class="card-header ">Search for a City Name</h2>
+                    <h2 class="card-header ">Search for a City Name<i class="fas fa-city"></i></h2>
                     <form id="city-form" class="card-body">
                         <label class="form-label" for="cityname">City Name</label>
                         <input name="cityname" id="cityname" type="text" autofocus="true" class="form-input"/>
@@ -48,7 +50,7 @@
         <div class="flex-row justify-space-between col-12">
             <div class="col-12 col-md-4" id="search">
                 <div class="card" id="history" style="display: none;">
-                    <h3 class="card-header">Search History<i id="trash" class="fas fa-trash" title="Clear History"></i> 
+                    <h3 class="card-header">Search History<i id="trash" class="fas fa-trash-alt" title="Clear History"></i> 
                     </h3>
                     <div class="card-body" id="history-buttons">
 
